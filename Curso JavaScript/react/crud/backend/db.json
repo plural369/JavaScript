@@ -1,18 +1,18 @@
 {
   "users": [
     {
-      "id": 1,
-      "nome": "Gabriel Espadoni",
-      "email": "teste@hotmail.com"
+      "name": "Gabriel",
+      "email": "gabriel@hotmail.com",
+      "id": 1
     },
     {
-      "id": 2,
-      "nome": "Beatriz Fernandes",
-      "email": "beatriz@hotmail.com"
+      "name": "Beatriz",
+      "email": "beatriz@hotmail.com",
+      "id": 2
     },
     {
-      "name": "Ana",
-      "email": "Ana@hotmail.com",
+      "name": "Teste2",
+      "email": "teste@hotmail.com",
       "id": 3
     }
   ]
