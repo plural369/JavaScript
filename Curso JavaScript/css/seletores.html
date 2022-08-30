@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+        /* * seleciona tudo / .classe só a classe de mesmo nome/ id sómente o id / #classe > div elemento dentro da classe 
+        / p + ul seleciona classes que vem depois / p ~ ol seleciona classes do pai / [feira= atributo]/ [feira*=asa] seleciota tudo que tiverasa/
+        span:nth-child(1) primeiro filho da classe seja span/ todos filhos impares section > :nth-child(odd)/ todos filhos impares section > :nth-child(odd),ul e também para ul 
+        section > :nth-child(odd) label selecionar somente o label da section/ section > span:nth-of-type(2) me dê o segundo elemnto do tipo span*/
+        *{
+            color: #ff0;
+            background-color: #f77;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='tag'>
+        <div class='tag'>
+            <p class='tag'>1</p>
+            <ul class='tag' feira='casa'>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+            <ul class='tag' feira='escritorio empresa'>
+                <li>Café</li>
+                <li>Água</li>
+            </ul>
+            <ol id='aprovados' class='tag'>
+                <li>Maria</li>
+                <li>Pedro</li>
+                <li>Ana</li>
+            </ol>
+            <div id='aninhado' class='tag'>
+                <div class="tag">
+                    <section class='tag'>
+                        <span class='tag'>1</span>
+                        <p class='tag'>2</p>
+                        <span class='tag'>3</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.cabecalho{
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    align-self:stretch;
+    background-color: rgba(255, 255, 255, 0.877);
+}
+.logo{
+    align-self: end;
+    margin-left: 15px;
+}
+.cabecalho img{
+    width: 250px;
+}
+.menu{
+    color: aliceblue;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    color: black;
+}
+.menu li{
+    margin: 20px 10px;
+}

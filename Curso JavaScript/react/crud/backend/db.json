@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "Gabriel Espadoni",
+      "email": "teste@hotmail.com"
+    },
+    {
+      "id": 2,
+      "nome": "Beatriz Fernandes",
+      "email": "beatriz@hotmail.com"
+    },
+    {
+      "name": "Ana",
+      "email": "Ana@hotmail.com",
+      "id": 3
+    }
+  ]
+}
