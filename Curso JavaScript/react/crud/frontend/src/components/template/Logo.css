@@ -8,3 +8,9 @@ aside.logo{
 aside.logo img{padding: 0 15px;
 width: 100%;
 }
+
+@media(max-width: 576px){
+    aside.logo img{
+        width: 350px;
+    }
+}
