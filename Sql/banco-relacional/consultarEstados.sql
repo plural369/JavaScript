@@ -1,0 +1,1 @@
+select nome as 'Nome do Estado', sigla as 'UF' from estados;
