@@ -11,12 +11,10 @@ inquirer.prompt([
         message: 'Digite a sua idade:',
     }  
 ]).then((resp) => {
-    try{
-        if(!Number.isInteger(resp.idade)){
-            throw new Error('O valor da idade não pode ser uma string')
+        if(!resp.nome || !resp.idade){
+            throw new Error('O valor da idade não pode ser vazio')
         }
-        if(resp.name === Number){
-            throw new Error('O valor do nome não pode ser um inteiro')
-        }
-    }catch(err){ console.log(err)}
-})
+
+        const dados = `Nome: ${resp.nome}, Idade: ${resp.idade}`
+        console.log(chalk.bgYellow.black(dados))
+}).catch((err) => console.log(err))
