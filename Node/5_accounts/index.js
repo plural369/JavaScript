@@ -181,10 +181,15 @@ function removeAmount(accountName, amount){
         return draw()
     }
 
-    account.balance = parseFloat(account.balance) - parseFloat(amount)
+    if(account.balance < amount){
+        console.log(chalk.bgRed.black('Valor de saque indisponível, consulte o saldo para o saque'))
+        operation()
+    }else{
+        account.balance = parseFloat(account.balance) - parseFloat(amount)
 
-    fs.writeFileSync(`accounts/${accountName}.json`, JSON.stringify(account), function(err){console.log(err)})
-    console.log(chalk.red(`Foi sacado o valor de R$${amount} da sua conta`))
+        fs.writeFileSync(`accounts/${accountName}.json`, JSON.stringify(account), function(err){console.log(err)})
+        console.log(chalk.red(`Foi sacado o valor de R$${amount} da sua conta`))
+    }
 }
 
 function getAccount(accountName){
