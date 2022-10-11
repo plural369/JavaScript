@@ -183,7 +183,6 @@ function removeAmount(accountName, amount){
 
     if(account.balance < amount){
         console.log(chalk.bgRed.black('Valor de saque indisponível, consulte o saldo para o saque'))
-        operation()
     }else{
         account.balance = parseFloat(account.balance) - parseFloat(amount)
 
