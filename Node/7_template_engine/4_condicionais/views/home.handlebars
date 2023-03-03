@@ -1,0 +1,13 @@
+<h1>Olá Handlebars</h1>
+<p>O nome do usuário é {{user.name}} {{user.surname}}</p>
+<p>Lorem ipsum dolor sit amet consectetur, 
+    adipisicing elit. Ea rerum ipsa nesciunt quod 
+    accusamus quibusdam nobis? Modi obcaecati commodi 
+    perspiciatis, voluptates 
+    minus nam officia quam corrupti ut qui distinctio hic?</p>
+{{#if auth}}
+    <p>Você está autenticado,<a href="/dashboard">clique aqui</a> para acessar a área de membros!</p>
+
+{{else}}
+    <p>Você não está autenticado</p>
+{{/if}}

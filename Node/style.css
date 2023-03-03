@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+  }
+  
+  div {
+    background-color: yellow;
+  }
+  
+  div a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+    display:inline-block;
+  }
+  
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .lista1 {
+    display: inline-block;
+  }
+  
+  .lista1:hover {
+    background: #333;
+  }
+  
+  .lista1:hover .lista2 {
+    display: block;
+  }
+  
+  .lista2 {
+    position: absolute;
+    width: 200px;
+    display: none;
+  }
+  
+  .lista-link {
+    background: #555;
+    display: block;
+  }
+  
+  .link {
+    display:block !important;
+  }
+  
+  .lista-link:hover {
+    background: #666;
+  }

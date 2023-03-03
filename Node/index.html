@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="teste">
+    <div>
+        <ul>
+          <li class='lista1'>
+            <a href="#">Menu Dropdown</a>
+            <ul class='lista2' id="ul">
+              <li class='lista-link'><a class='link' href="#">Link 1</a></li>
+              <li class='lista-link'><a class='link' href="#">Link 2</a></li>
+              <li class='lista-link'><a class='link' href="#">Link 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+</body>
+
+<script>
+    var ul = document.getElementById('t_TreeNav')
+    var nav = document.getElementById('t_Button_navControl')
+    ul.addEventListener('mouseout', function(a) {
+       return a = nav.click()      
+    });
+</script>
+</html>

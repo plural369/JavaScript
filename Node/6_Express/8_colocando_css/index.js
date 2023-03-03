@@ -14,6 +14,9 @@ app.use(
 
 app.use(express.json())
 
+//arquivos estáticos
+app.use(express.static('public'))
+
 const basePath = path.join(__dirname, 'templates')
 
 app.use('/users', users)
